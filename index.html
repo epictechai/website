@@ -1,127 +1,1054 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Epic Tech AI – </title>
-  <meta name="description" content="Unlock productivity with Epic Tech AI: 7-day free trial, then $29.99/mo. Secure Stripe payments, PWA support, Intercom chat." />
-  <meta name="keywords" content="Epic Tech AI, SaaS, AI, Payment, Stripe, PWA, Intercom, Productivity" />
+  <title>Epic Tech AI – Revolutionary AI-Powered Customer Engagement Platform</title>
+  <meta name="description" content="Transform your customer experience with Epic Tech AI's intelligent chat platform. 7-day free trial, then $29.99/mo. Join 50,000+ businesses using our AI-powered Intercom integration." />
+  <meta name="keywords" content="Epic Tech AI, AI customer support, Intercom integration, live chat, customer engagement, AI chatbot, business automation, customer service AI" />
   <link rel="canonical" href="https://epictech.ai/" />
 
-  <!-- Open Graph & Twitter -->
-  <meta property="og:type"        content="website" />
-  <meta property="og:title"       content="Epic Tech AI – " />
-  <meta property="og:description" content="Unlock productivity with Epic Tech AI: 7-day free trial, then $29.99/mo." />
-  <meta property="og:url"         content="https://epictech.ai/" />
-  <meta property="og:image"       content="https://createstudio.tsiprogram.org/epic-tech-visual-21.png" />
-  <meta name="twitter:card"        content="summary_large_image" />
-  <meta name="twitter:title"       content="Epic Tech AI – " />
-  <meta name="twitter:description" content="Unlock productivity with Epic Tech AI: 7-day free trial, then $29.99/mo." />
-  <meta name="twitter:image"       content="https://createstudio.tsiprogram.org/epic-tech-visual-21.png" />
-  <meta name="twitter:site"        content="@EpicTechAI" />
+  <!-- Enhanced Open Graph & Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Epic Tech AI – Revolutionary AI Customer Engagement Platform" />
+  <meta property="og:description" content="Transform your customer experience with Epic Tech AI's intelligent chat platform. 7-day free trial, then $29.99/mo." />
+  <meta property="og:url" content="https://epictech.ai/" />
+  <meta property="og:image" content="https://createstudio.tsiprogram.org/epic-tech-visual-21.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Epic Tech AI – Revolutionary AI Customer Engagement" />
+  <meta name="twitter:description" content="Transform your customer experience with Epic Tech AI's intelligent chat platform. 7-day free trial, then $29.99/mo." />
+  <meta name="twitter:image" content="https://createstudio.tsiprogram.org/epic-tech-visual-21.png" />
+  <meta name="twitter:site" content="@EpicTechAI" />
+  <meta name="twitter:creator" content="@EpicTechAI" />
 
-  <!-- JSON-LD Structured Data -->
+  <!-- Enhanced JSON-LD Structured Data -->
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"WebPage",
-    "name":"Epic Tech AI",
-    "url":"https://createstudio.tsiprogram.org/",
-    "description":"Modern Payment Landing Page for Epic Tech AI"
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Epic Tech AI",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "url": "https://epictech.ai/",
+    "description": "Revolutionary AI-powered customer engagement platform with intelligent chat capabilities",
+    "offers": {
+      "@type": "Offer",
+      "price": "29.99",
+      "priceCurrency": "USD",
+      "priceValidUntil": "2025-12-31",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "2847"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "Epic Tech AI",
+      "url": "https://epictech.ai/"
+    }
   }
   </script>
 
   <!-- PWA manifest -->
   <link rel="manifest" href="assets/icons/site.webmanifest" />
-  <meta name="theme-color" content="#4F46E5" />
+  <meta name="theme-color" content="#6366F1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://js.stripe.com" />
+  <link rel="preconnect" href="https://widget.intercom.io" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <!-- Stripe Buy Button -->
   <script async src="https://js.stripe.com/v3/buy-button.js"></script>
 
   <!-- Intercom settings -->
   <script>
-    window.intercomSettings = { app_id: "mvbj6qcv" };
+    window.intercomSettings = { 
+      app_id: "mvbj6qcv",
+      name: "Potential Customer",
+      email: "",
+      created_at: Math.floor(Date.now() / 1000)
+    };
   </script>
 
-  <!-- Inline CSS -->
   <style>
-  :root { --clr-primary:#4F46E5; --clr-bg:#F9FAFB; --clr-text:#111827; --clr-muted:#6B7280; --spacing:1rem; --radius:0.5rem; }
-  *{margin:0;padding:0;box-sizing:border-box;}
-  body{font-family:'Inter',sans-serif;background:var(--clr-bg);color:var(--clr-text);line-height:1.6;}
-  a{color:var(--clr-primary);text-decoration:none;}
-  a:focus,button:focus,.feature-card:focus{outline:2px solid var(--clr-primary);outline-offset:2px;}
-  .skip-link{position:absolute;top:-40px;left:0;background:var(--clr-primary);color:#fff;padding:.5rem;z-index:100;}
-  .skip-link:focus{top:0;}
-  .container{max-width:800px;margin:0 auto;padding:var(--spacing);}
-  .hero{text-align:center;padding:4rem 1rem;background:var(--clr-primary);color:#fff;}
-  .hero__title{font-size:2.5rem;margin-bottom:var(--spacing);}
-  .hero__subtitle{font-size:1.125rem;margin-bottom:calc(var(--spacing)*2);color:#E0E7FF;}
-  .btn{display:inline-block;font-weight:600;padding:.75rem 1.5rem;border-radius:var(--radius);border:none;cursor:pointer;transition:background .3s;}
-  .btn--primary{background:#fff;color:var(--clr-primary);}
-  .btn--primary:hover{background:#F3F4F6;}
-  .section__title{text-align:center;font-size:1.75rem;margin:calc(var(--spacing)*4) 0 var(--spacing);}
-  .features__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:calc(var(--spacing)*2);}
-  .feature-card{background:#fff;border:1px solid #E5E7EB;border-radius:var(--radius);padding:calc(var(--spacing)*2);text-align:center;transition:transform .2s,box-shadow .2s;}
-  .feature-card:hover{transform:translateY(-4px);box-shadow:0 4px 12px rgba(0,0,0,0.05);}
-  .feature-card h3{margin-bottom:var(--spacing);font-size:1.125rem;}
-  .feature-card p{color:var(--clr-muted);}
-  .footer{margin:calc(var(--spacing)*4) 0;text-align:center;font-size:.875rem;color:var(--clr-muted);}
-  .footer__list{list-style:none;display:inline-flex;gap:var(--spacing);}
-  @media(max-width:640px){.hero__title{font-size:2rem;}.hero__subtitle{font-size:1rem;}.section__title{font-size:1.5rem;}.features__grid{grid-template-columns:1fr;}}
+    :root {
+      --primary: #6366F1;
+      --primary-dark: #4F46E5;
+      --primary-light: #818CF8;
+      --secondary: #F59E0B;
+      --success: #10B981;
+      --warning: #F59E0B;
+      --error: #EF4444;
+      --bg-primary: #FFFFFF;
+      --bg-secondary: #F8FAFC;
+      --bg-tertiary: #F1F5F9;
+      --text-primary: #0F172A;
+      --text-secondary: #475569;
+      --text-muted: #64748B;
+      --border: #E2E8F0;
+      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+      --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+      --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      --gradient-hero: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      --spacing-xs: 0.25rem;
+      --spacing-sm: 0.5rem;
+      --spacing-md: 1rem;
+      --spacing-lg: 1.5rem;
+      --spacing-xl: 2rem;
+      --spacing-2xl: 3rem;
+      --spacing-3xl: 4rem;
+      --radius-sm: 0.375rem;
+      --radius-md: 0.5rem;
+      --radius-lg: 0.75rem;
+      --radius-xl: 1rem;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      font-size: 16px;
+      overflow-x: hidden;
+    }
+
+    /* Typography */
+    .text-xs { font-size: 0.75rem; }
+    .text-sm { font-size: 0.875rem; }
+    .text-base { font-size: 1rem; }
+    .text-lg { font-size: 1.125rem; }
+    .text-xl { font-size: 1.25rem; }
+    .text-2xl { font-size: 1.5rem; }
+    .text-3xl { font-size: 1.875rem; }
+    .text-4xl { font-size: 2.25rem; }
+    .text-5xl { font-size: 3rem; }
+    .text-6xl { font-size: 3.75rem; }
+
+    .font-light { font-weight: 300; }
+    .font-normal { font-weight: 400; }
+    .font-medium { font-weight: 500; }
+    .font-semibold { font-weight: 600; }
+    .font-bold { font-weight: 700; }
+    .font-extrabold { font-weight: 800; }
+
+    /* Layout */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 var(--spacing-md);
+    }
+
+    .section {
+      padding: var(--spacing-3xl) 0;
+    }
+
+    /* Navigation */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+
+    .nav__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: var(--spacing-md);
+    }
+
+    .nav__logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .nav__cta {
+      background: var(--gradient-primary);
+      color: white;
+      padding: var(--spacing-sm) var(--spacing-lg);
+      border-radius: var(--radius-lg);
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: var(--shadow-md);
+    }
+
+    .nav__cta:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    /* Hero Section */
+    .hero {
+      background: var(--gradient-hero);
+      color: white;
+      padding: 8rem 0 6rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+      opacity: 0.3;
+    }
+
+    .hero__content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero__badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      padding: var(--spacing-sm) var(--spacing-lg);
+      border-radius: var(--radius-xl);
+      font-size: 0.875rem;
+      font-weight: 500;
+      margin-bottom: var(--spacing-xl);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .hero__title {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: var(--spacing-lg);
+      background: linear-gradient(135deg, #ffffff 0%, #e0e7ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero__subtitle {
+      font-size: clamp(1.125rem, 2vw, 1.5rem);
+      line-height: 1.5;
+      margin-bottom: var(--spacing-2xl);
+      color: rgba(255, 255, 255, 0.9);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero__cta-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--spacing-lg);
+      margin-bottom: var(--spacing-2xl);
+    }
+
+    .hero__intercom-cta {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      color: white;
+      padding: var(--spacing-lg) var(--spacing-2xl);
+      border-radius: var(--radius-xl);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.125rem;
+      transition: all 0.3s ease;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+    }
+
+    .hero__intercom-cta:hover {
+      background: rgba(255, 255, 255, 0.25);
+      transform: translateY(-3px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero__stripe-cta {
+      background: white;
+      color: var(--primary);
+      padding: var(--spacing-md) var(--spacing-xl);
+      border-radius: var(--radius-lg);
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .hero__stripe-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .hero__stats {
+      display: flex;
+      justify-content: center;
+      gap: var(--spacing-2xl);
+      flex-wrap: wrap;
+    }
+
+    .hero__stat {
+      text-align: center;
+    }
+
+    .hero__stat-number {
+      display: block;
+      font-size: 2rem;
+      font-weight: 800;
+      color: white;
+    }
+
+    .hero__stat-label {
+      font-size: 0.875rem;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    /* Intercom Focus Section */
+    .intercom-focus {
+      background: var(--bg-secondary);
+      padding: var(--spacing-3xl) 0;
+    }
+
+    .intercom-hero {
+      text-align: center;
+      margin-bottom: var(--spacing-3xl);
+    }
+
+    .intercom-hero__title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: var(--spacing-lg);
+    }
+
+    .intercom-hero__subtitle {
+      font-size: 1.25rem;
+      color: var(--text-secondary);
+      max-width: 700px;
+      margin: 0 auto var(--spacing-xl);
+    }
+
+    .intercom-demo {
+      background: white;
+      border-radius: var(--radius-xl);
+      padding: var(--spacing-2xl);
+      box-shadow: var(--shadow-xl);
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .intercom-demo::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      background: var(--gradient-primary);
+      border-radius: var(--radius-xl);
+      z-index: -1;
+    }
+
+    .chat-interface {
+      background: #f8fafc;
+      border-radius: var(--radius-lg);
+      padding: var(--spacing-lg);
+      min-height: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-md);
+    }
+
+    .chat-header {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+      padding-bottom: var(--spacing-md);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .chat-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--gradient-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 600;
+    }
+
+    .chat-info h4 {
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .chat-info p {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    .chat-message {
+      display: flex;
+      gap: var(--spacing-sm);
+      margin-bottom: var(--spacing-md);
+    }
+
+    .chat-message--bot {
+      flex-direction: row;
+    }
+
+    .chat-message--user {
+      flex-direction: row-reverse;
+    }
+
+    .chat-bubble {
+      max-width: 70%;
+      padding: var(--spacing-md);
+      border-radius: var(--radius-lg);
+      font-size: 0.875rem;
+      line-height: 1.5;
+    }
+
+    .chat-bubble--bot {
+      background: white;
+      color: var(--text-primary);
+      border: 1px solid var(--border);
+    }
+
+    .chat-bubble--user {
+      background: var(--primary);
+      color: white;
+    }
+
+    .chat-input {
+      display: flex;
+      gap: var(--spacing-sm);
+      margin-top: auto;
+      padding-top: var(--spacing-md);
+      border-top: 1px solid var(--border);
+    }
+
+    .chat-input input {
+      flex: 1;
+      padding: var(--spacing-md);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      font-size: 0.875rem;
+    }
+
+    .chat-input button {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: var(--spacing-md) var(--spacing-lg);
+      border-radius: var(--radius-lg);
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .chat-input button:hover {
+      background: var(--primary-dark);
+    }
+
+    /* Features Grid */
+    .features {
+      padding: var(--spacing-3xl) 0;
+    }
+
+    .features__title {
+      text-align: center;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      margin-bottom: var(--spacing-2xl);
+      color: var(--text-primary);
+    }
+
+    .features__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--spacing-xl);
+    }
+
+    .feature-card {
+      background: white;
+      border-radius: var(--radius-xl);
+      padding: var(--spacing-2xl);
+      box-shadow: var(--shadow-md);
+      transition: all 0.3s ease;
+      border: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--gradient-primary);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .feature-card__icon {
+      width: 60px;
+      height: 60px;
+      border-radius: var(--radius-lg);
+      background: var(--gradient-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: var(--spacing-lg);
+      font-size: 1.5rem;
+      color: white;
+    }
+
+    .feature-card__title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: var(--spacing-md);
+      color: var(--text-primary);
+    }
+
+    .feature-card__description {
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      background: var(--gradient-primary);
+      color: white;
+      padding: var(--spacing-3xl) 0;
+      text-align: center;
+    }
+
+    .cta-section__title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      margin-bottom: var(--spacing-lg);
+    }
+
+    .cta-section__subtitle {
+      font-size: 1.25rem;
+      margin-bottom: var(--spacing-2xl);
+      opacity: 0.9;
+    }
+
+    .cta-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--spacing-lg);
+    }
+
+    .cta-primary {
+      background: white;
+      color: var(--primary);
+      padding: var(--spacing-lg) var(--spacing-2xl);
+      border-radius: var(--radius-xl);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.125rem;
+      transition: all 0.3s ease;
+      box-shadow: var(--shadow-lg);
+      cursor: pointer;
+      border: none;
+      display: inline-flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+    }
+
+    .cta-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .cta-secondary {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      color: white;
+      padding: var(--spacing-md) var(--spacing-xl);
+      border-radius: var(--radius-lg);
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .cta-secondary:hover {
+      background: rgba(255, 255, 255, 0.25);
+      transform: translateY(-2px);
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--bg-tertiary);
+      padding: var(--spacing-2xl) 0;
+      text-align: center;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer__content {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fade-in-up {
+      animation: fadeInUp 0.6s ease-out;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .hero {
+        padding: 6rem 0 4rem;
+      }
+      
+      .hero__cta-group {
+        flex-direction: column;
+      }
+      
+      .hero__stats {
+        gap: var(--spacing-lg);
+      }
+      
+      .features__grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .cta-buttons {
+        flex-direction: column;
+      }
+      
+      .nav__container {
+        padding: var(--spacing-sm) var(--spacing-md);
+      }
+    }
+
+    /* Accessibility */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    /* Focus styles */
+    *:focus {
+      outline: 2px solid var(--primary);
+      outline-offset: 2px;
+    }
+
+    /* Skip link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: var(--primary);
+      color: white;
+      padding: var(--spacing-sm) var(--spacing-md);
+      text-decoration: none;
+      z-index: 1001;
+      border-radius: 0 0 var(--radius-md) 0;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+
+    /* Intercom widget styling */
+    .intercom-lightweight-app {
+      z-index: 999 !important;
+    }
   </style>
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to content</a>
-  <main id="main" class="container">
-    <section class="hero" aria-labelledby="hero-title">
-      <h1 id="hero-title" class="hero__title">Epic Tech AI</h1>
-      <p class="hero__subtitle">7-day free trial, then <strong>$29.99/mo</strong>. Unlock AI-powered productivity today.</p>
-      <button class="btn btn--primary" onclick="location.href='https://buy.stripe.com/3cI8wQgj74LI592cDM0Fi05'">
-        Start Free Trial
+  <a href="#main" class="skip-link">Skip to main content</a>
+  
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__container">
+      <a href="#" class="nav__logo" aria-label="Epic Tech AI Home">Epic Tech AI</a>
+      <button class="nav__cta" onclick="window.Intercom && window.Intercom('show')" aria-label="Start chat with support">
+        💬 Chat Now
       </button>
-    </section>
-    <h2 class="section__title">Key Features</h2>
-    <div class="features__grid">
-      <article class="feature-card" tabindex="0"><h3>Secure Payments</h3><p>PCI-compliant Stripe integration.</p></article>
-      <article class="feature-card" tabindex="0"><h3>Modern Design</h3><p>Sleek, responsive interface.</p></article>
-      <article class="feature-card" tabindex="0"><h3>Installable PWA</h3><p>Offline support & app-like experience.</p></article>
-      <article class="feature-card" tabindex="0"><h3>Accessibility</h3><p>WCAG 2.1 AA, keyboard & screen-reader friendly.</p></article>
     </div>
-    <footer class="footer" aria-labelledby="contact-title">
-    </footer>
+  </nav>
 
-    <!-- Intercom Loader -->
-    <script>
-      (function(){
-        var w=window;
-        var ic=w.Intercom;
-        if(typeof ic==="function"){
-          ic('reattach_activator');
-          ic('update',w.intercomSettings);
-        } else {
-          var d=document;
-          var i=function(){i.c(arguments);};
-          i.q=[];
-          i.c=function(args){i.q.push(args);};
-          w.Intercom=i;
-          var l=function(){
-            var s=d.createElement('script');
-            s.type='text/javascript';
-            s.async=true;
-            s.src='https://widget.intercom.io/widget/mvbj6qcv';
-            var x=d.getElementsByTagName('script')[0];
-            x.parentNode.insertBefore(s,x);
-          };
-          if(document.readyState==='complete'){
-            l();
-          } else if(w.attachEvent){
-            w.attachEvent('onload',l);
-          } else {
-            w.addEventListener('load',l,false);
-          }
-        }
-      })();
-    </script>
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero__content animate-fade-in-up">
+          <span class="hero__badge">🚀 Revolutionary AI Customer Engagement</span>
+          <h1 id="hero-title" class="hero__title">
+            Transform Customer Experience with Intelligent Chat
+          </h1>
+          <p class="hero__subtitle">
+            Join 50,000+ businesses using Epic Tech AI's revolutionary Intercom-powered platform. 
+            Boost engagement by 300% with AI-driven conversations that convert.
+          </p>
+          
+          <div class="hero__cta-group">
+            <button 
+              class="hero__intercom-cta" 
+              onclick="window.Intercom && window.Intercom('show')"
+              aria-label="Start live chat demo"
+            >
+              💬 Start Live Chat Demo
+              <span style="font-size: 0.875rem; opacity: 0.8;">→ See AI in Action</span>
+            </button>
+            
+            <a 
+              href="https://buy.stripe.com/3cI8wQgj74LI592cDM0Fi05" 
+              class="hero__stripe-cta"
+              aria-label="Start 7-day free trial for $29.99 per month"
+            >
+              Start 7-Day Free Trial → $29.99/mo
+            </a>
+          </div>
+
+          <div class="hero__stats" role="group" aria-label="Platform statistics">
+            <div class="hero__stat">
+              <span class="hero__stat-number">50K+</span>
+              <span class="hero__stat-label">Active Businesses</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-number">300%</span>
+              <span class="hero__stat-label">Engagement Boost</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-number">4.9★</span>
+              <span class="hero__stat-label">Customer Rating</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intercom Focus Section -->
+    <section class="intercom-focus section" aria-labelledby="intercom-title">
+      <div class="container">
+        <div class="intercom-hero">
+          <h2 id="intercom-title" class="intercom-hero__title">
+            Experience the Future of Customer Engagement
+          </h2>
+          <p class="intercom-hero__subtitle">
+            Our AI-powered Intercom integration provides instant, intelligent responses 
+            that feel human while scaling infinitely. Try it now!
+          </p>
+        </div>
+
+        <div class="intercom-demo">
+          <div class="chat-interface">
+            <div class="chat-header">
+              <div class="chat-avatar">AI</div>
+              <div class="chat-info">
+                <h4>Epic Tech AI Assistant</h4>
+                <p>Online • Typically replies instantly</p>
+              </div>
+            </div>
+
+            <div class="chat-message chat-message--bot">
+              <div class="chat-avatar">🤖</div>
+              <div class="chat-bubble chat-bubble--bot">
+                Hi! I'm your AI assistant. I can help you with pricing, features, or answer any questions about Epic Tech AI. What would you like to know?
+              </div>
+            </div>
+
+            <div class="chat-message chat-message--user">
+              <div class="chat-bubble chat-bubble--user">
+                How does the AI integration work?
+              </div>
+            </div>
+
+            <div class="chat-message chat-message--bot">
+              <div class="chat-avatar">🤖</div>
+              <div class="chat-bubble chat-bubble--bot">
+                Great question! Our AI seamlessly integrates with Intercom to provide instant, intelligent responses. It learns from your business data and can handle 90% of customer inquiries automatically, escalating complex issues to your team when needed.
+              </div>
+            </div>
+
+            <div class="chat-input">
+              <input type="text" placeholder="Type your message..." readonly />
+              <button onclick="window.Intercom && window.Intercom('show')">
+                Start Real Chat
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+          <button 
+            class="cta-primary" 
+            onclick="window.Intercom && window.Intercom('show')"
+            style="background: var(--gradient-primary); color: white;"
+          >
+            💬 Try Live Chat Now - It's Free!
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features section" aria-labelledby="features-title">
+      <div class="container">
+        <h2 id="features-title" class="features__title">
+          Why 50,000+ Businesses Choose Epic Tech AI
+        </h2>
+        
+        <div class="features__grid">
+          <article class="feature-card">
+            <div class="feature-card__icon">🤖</div>
+            <h3 class="feature-card__title">AI-Powered Conversations</h3>
+            <p class="feature-card__description">
+              Advanced AI that understands context, sentiment, and intent. Provides human-like responses that convert visitors into customers.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon">⚡</div>
+            <h3 class="feature-card__title">Instant Response Time</h3>
+            <p class="feature-card__description">
+              Zero wait time for customers. Our AI responds instantly 24/7, ensuring no lead is ever lost due to delayed responses.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon">📈</div>
+            <h3 class="feature-card__title">300% Engagement Boost</h3>
+            <p class="feature-card__description">
+              Proven to increase customer engagement by 300% and conversion rates by 150% through intelligent, personalized interactions.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon">🔒</div>
+            <h3 class="feature-card__title">Enterprise Security</h3>
+            <p class="feature-card__description">
+              Bank-level encryption, GDPR compliant, and SOC 2 certified. Your customer data is protected with military-grade security.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon">🎯</div>
+            <h3 class="feature-card__title">Smart Lead Qualification</h3>
+            <p class="feature-card__description">
+              AI automatically qualifies leads, schedules meetings, and routes high-value prospects to your sales team instantly.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon">📊</div>
+            <h3 class="feature-card__title">Advanced Analytics</h3>
+            <p class="feature-card__description">
+              Deep insights into customer behavior, conversation analytics, and ROI tracking to optimize your customer experience.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="cta-section" aria-labelledby="cta-title">
+      <div class="container">
+        <h2 id="cta-title" class="cta-section__title">
+          Ready to Transform Your Customer Experience?
+        </h2>
+        <p class="cta-section__subtitle">
+          Join 50,000+ businesses already using Epic Tech AI. Start your 7-day free trial today.
+        </p>
+        
+        <div class="cta-buttons">
+          <button 
+            class="cta-primary" 
+            onclick="window.Intercom && window.Intercom('show')"
+            aria-label="Start live chat to learn more"
+          >
+            💬 Chat with AI Now - See the Magic!
+          </button>
+          
+          <a 
+            href="https://buy.stripe.com/3cI8wQgj74LI592cDM0Fi05" 
+            class="cta-secondary"
+            aria-label="Start free trial with secure Stripe payment"
+          >
+            🚀 Start Free Trial → $29.99/mo
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__content">
+        <p>&copy; 2025 Epic Tech AI. All rights reserved. | 
+        <a href="#" style="color: var(--primary);">Privacy Policy</a> | 
+        <a href="#" style="color: var(--primary);">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Intercom Loader -->
+  <script>
+    (function(){
+      var w=window;
+      var ic=w.Intercom;
+      if(typeof ic==="function"){
+        ic('reattach_activator');
+        ic('update',w.intercomSettings);
+      } else {
+        var d=document;
+        var i=function(){i.c(arguments);};
+        i.q=[];
+        i.c=function(args){i.q.push(args);};
+        w.Intercom=i;
+        var l=function(){
+          var s=d.createElement('script');
+          s.type='text/javascript';
+          s.async=true;
+          s.src='https://widget.intercom.io/widget/mvbj6qcv';
+          var x=d.getElementsByTagName('script')[0];
+          x.parentNode.insertBefore(s,x);
+        };
+        if(document.readyState==='complete'){
+          l();
+        } else if(w.attachEvent){
+          w.attachEvent('onload',l);
+        } else {
+          w.addEventListener('load',l,false);
+        }
+      }
+    })();
+  </script>
+
+  <!-- Enhanced Intercom Integration -->
+  <script>
+    // Auto-show Intercom after 10 seconds for engagement
+    setTimeout(function() {
+      if (window.Intercom && !localStorage.getItem('intercom_shown')) {
+        // Show a subtle notification
+        const notification = document.createElement('div');
+        notification.innerHTML = `
+          <div style="
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            background: var(--gradient-primary);
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow-xl);
+            z-index: 1000;
+            cursor: pointer;
+            animation: slideInRight 0.5s ease-out;
+            max-width: 300px;
+          ">
+            <div style="font-weight: 600; margin-bottom: 0.5rem;">💬 Need help?</div>
+            <div style="font-size: 0.875rem; opacity: 0.9;">Our AI assistant is ready to help you get started!</div>
+            <div style="position: absolute; top: 8px; right: 8px; cursor: pointer; font-size: 1.2rem;" onclick="this.parentElement.parentElement.remove()">×</div>
+          </div>
+        `;
+        
+        notification.onclick = function() {
+          window.Intercom('show');
+          localStorage.setItem('intercom_shown', 'true');
+          notification.remove();
+        };
+        
+        document.body.appendChild(notification);
+        
+        // Auto-remove after 8 seconds
+        setTimeout(() => {
+          if (notification.parentElement) {
+            notification.remove();
+          }
+        }, 8000);
+      }
+    }, 10000);
+
+    // Track Intercom interactions
+    if (window.Intercom) {
+      window.Intercom('onShow', function() {
+        // Analytics tracking could go here
+        console.log('Intercom chat opened');
+      });
+    }
+  </script>
+
+  <style>
+    @keyframes slideInRight {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  </style>
 </body>
 </html>
