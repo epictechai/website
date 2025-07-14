@@ -5,8 +5,8 @@
   "main": "index.html",
   "scripts": {
     "build": "mkdir -p dist && cp -r * dist/ && rm -rf dist/node_modules",
-    "dev": "python3 -m http.server 3000",
-    "preview": "python3 -m http.server 3000 --directory dist"
+    "dev": "npx serve -s . -l 3000",
+    "preview": "npx serve -s dist -l 3000"
   },
   "keywords": ["Epic Tech AI", "SaaS", "AI", "Payment", "Stripe", "PWA"],
   "author": "Epic Tech AI",
