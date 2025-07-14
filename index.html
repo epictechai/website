@@ -1,84 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Epic Tech AI Chat Hub</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Epic Tech AI – Modern Payment Landing</title>
+  <meta name="description" content="Unlock productivity with Epic Tech AI: 7-day free trial, then $29.99/mo. Secure Stripe payments, PWA support, Intercom chat." />
+  <meta name="keywords" content="Epic Tech AI, SaaS, AI, Payment, Stripe, PWA, Intercom, Productivity" />
+  <link rel="canonical" href="https://epictech.ai/" />
 
-  <!-- Tailwind CSS & Inter Font -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>body { font-family: 'Inter', sans-serif; }</style>
+  <!-- Open Graph & Twitter -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Epic Tech AI – Modern Payment Landing" />
+  <meta property="og:description" content="Unlock productivity with Epic Tech AI: 7-day free trial, then $29.99/mo." />
+  <meta property="og:url"         content="https://epictech.ai/" />
+  <meta property="og:image"       content="https://epictech.ai/assets/icons/og-image.png" />
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Epic Tech AI – Modern Payment Landing" />
+  <meta name="twitter:description" content="Unlock productivity with Epic Tech AI: 7-day free trial, then $29.99/mo." />
+  <meta name="twitter:image"       content="https://epictech.ai/assets/icons/og-image.png" />
+  <meta name="twitter:site"        content="@EpicTechAI" />
 
-  <!-- Stripe Buy Button -->
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"Epic Tech AI",
+    "url":"https://epictech.ai/",
+    "description":"Modern Payment Landing Page for Epic Tech AI"
+  }
+  </script>
+
+  <!-- PWA manifest -->
+  <link rel="manifest" href="assets/icons/site.webmanifest" />
+  <meta name="theme-color" content="#4F46E5" />
+
+  <!-- Stripe Buy Button script -->
   <script async src="https://js.stripe.com/v3/buy-button.js"></script>
 
-  <!-- Intercom settings (must come before loader) -->
+  <!-- Intercom config -->
   <script>
-    window.intercomSettings = {
-      app_id: "mvbj6qcv",        // ← Your Intercom App ID
-      // auto-open the messenger on page load:
-      alignment: "right",
-      custom_launcher_selector: "body"  // we’ll auto-show below
-    };
+    window.intercomSettings = { app_id: "mvbj6qcv" };
   </script>
+
+  <!-- Inline CSS -->
+  <style>
+  :root {
+    --clr-primary: #4F46E5;
+    --clr-bg: #F9FAFB;
+    --clr-text: #111827;
+    --clr-muted: #6B7280;
+    --spacing: 1rem;
+    --radius: 0.5rem;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--clr-bg);
+    color: var(--clr-text);
+    line-height:1.6;
+  }
+  a { color: var(--clr-primary); text-decoration:none; }
+  a:focus, button:focus, .feature-card:focus { outline:2px solid var(--clr-primary); outline-offset:2px; }
+  .skip-link {
+    position:absolute; top:-40px; left:0;
+    background:var(--clr-primary); color:#fff;
+    padding:0.5rem; z-index:100;
+  }
+  .skip-link:focus { top:0; }
+  .container { max-width:800px; margin:0 auto; padding:var(--spacing); }
+  /* Hero */
+  .hero { text-align:center; padding:4rem 1rem; background:var(--clr-primary); color:#fff; }
+  .hero__title { font-size:2.5rem; margin-bottom:var(--spacing); }
+  .hero__subtitle { font-size:1.125rem; margin-bottom:calc(var(--spacing)*2); color:#E0E7FF; }
+  .btn { display:inline-block; font-weight:600; padding:0.75rem 1.5rem; border-radius:var(--radius); border:none; cursor:pointer; transition:background 0.3s; }
+  .btn--primary { background: #fff; color: var(--clr-primary); }
+  .btn--primary:hover { background: #F3F4F6; }
+  /* Features */
+  .section__title { text-align:center; font-size:1.75rem; margin:calc(var(--spacing)*4) 0 var(--spacing); }
+  .features__grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:calc(var(--spacing)*2);
+  }
+  .feature-card {
+    background:#fff; border:1px solid #E5E7EB;
+    border-radius:var(--radius); padding:calc(var(--spacing)*2);
+    text-align:center; transition:transform 0.2s,box-shadow 0.2s;
+  }
+  .feature-card:hover { transform:translateY(-4px); box-shadow:0 4px 12px rgba(0,0,0,0.05); }
+  .feature-card h3 { margin-bottom:var(--spacing); font-size:1.125rem; }
+  .feature-card p { color:var(--clr-muted); }
+  /* Footer */
+  .footer { margin:calc(var(--spacing)*4) 0; text-align:center; font-size:0.875rem; color:var(--clr-muted); }
+  .footer__list { list-style:none; display:inline-flex; gap:var(--spacing); }
+  /* Responsive */
+  @media (max-width:640px) {
+    .hero__title { font-size:2rem; }
+    .hero__subtitle { font-size:1rem; }
+    .section__title { font-size:1.5rem; }
+    .features__grid { grid-template-columns:1fr; }
+  }
+  </style>
 </head>
-<body class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-600 to-purple-700 text-white">
 
-  <!-- Title & Stripe -->
-  <div class="text-center space-y-4 px-4">
-    <h1 class="text-5xl font-extrabold">Welcome to Epic Tech AI</h1>
-    <p class="text-lg opacity-90">Chat with our AI-powered assistant below 👇</p>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
 
-    <!-- Stripe subscription links -->
-    <div class="space-x-4 mt-6">
-      <!-- 7 day free trial -->
-      <a href="https://buy.stripe.com/3cI8wQgj74LI592cDM0Fi05" target="_blank"
-         class="px-6 py-3 bg-yellow-400 text-gray-900 font-semibold rounded-lg shadow hover:bg-yellow-500 transition">
-        Start 7-Day Free Trial
-      </a>
-      <!-- Monthly plan -->
-      <a href="https://buy.stripe.com/00g5mU7kL4BI7eo28b" target="_blank"
-         class="px-6 py-3 bg-green-400 text-gray-900 font-semibold rounded-lg shadow hover:bg-green-500 transition">
-        $29.99 / month
-      </a>
+  <main id="main" class="container">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title" class="hero__title">Epic Tech AI</h1>
+      <p class="hero__subtitle">7-day free trial, then <strong>$29.99/mo</strong>. Unlock AI-powered productivity today.</p>
+      <button class="btn btn--primary"
+        onclick="location.href='https://buy.stripe.com/3cI8wQgj74LI592cDM0Fi05'">
+        Start Free Trial
+      </button>
+    </section>
+
+    <!-- Features -->
+    <h2 class="section__title">Key Features</h2>
+    <div class="features__grid">
+      <article class="feature-card" tabindex="0">
+        <h3>Secure Payments</h3>
+        <p>PCI-compliant Stripe integration for worry-free transactions.</p>
+      </article>
+      <article class="feature-card" tabindex="0">
+        <h3>Modern Design</h3>
+        <p>Sleek, responsive, and distraction-free interface.</p>
+      </article>
+      <article class="feature-card" tabindex="0">
+        <h3>Installable PWA</h3>
+        <p>Offline support & app-like experience across devices.</p>
+      </article>
+      <article class="feature-card" tabindex="0">
+        <h3>Accessibility</h3>
+        <p>WCAG 2.1 AA—keyboard & screen-reader friendly.</p>
+      </article>
     </div>
-  </div>
 
-  <!-- Contact Info -->
-  <footer class="mt-auto mb-8 text-center space-y-1 text-sm opacity-80">
-    <div>Email: <a href="mailto:epictechai@gmail.com" class="underline">epictechai@gmail.com</a></div>
-    <div>Follow: <a href="https://x.com/EpicTechAI" target="_blank" class="underline">@EpicTechAI</a></div>
-    <div>Web: <a href="https://epictech.ai" target="_blank" class="underline">epictech.ai</a></div>
-  </footer>
+    <!-- Contact -->
+    <footer class="footer" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="section__title">Contact Us</h2>
+      <ul class="footer__list">
+        <li>Email: <a href="mailto:epictechai@gmail.com">epictechai@gmail.com</a></li>
+        <li>Twitter: <a href="https://x.com/EpicTechAI" target="_blank">@EpicTechAI</a></li>
+        <li>Web: <a href="https://epictech.ai" target="_blank">epictech.ai</a></li>
+      </ul>
+    </footer>
+  </main>
 
-  <!-- Intercom loader & auto-open -->
+  <!-- Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+        .register('sw.js')
+        .catch(err => console.error('SW registration failed:', err));
+    }
+  </script>
+
+  <!-- Intercom Loader -->
   <script>
     (function(){
       var w=window, ic=w.Intercom;
       if(typeof ic==="function"){
         ic('reattach_activator');
-        ic('update',w.intercomSettings);
+        ic('update', w.intercomSettings);
       } else {
-        var d=document, i=function(){ i.c(arguments) }; i.q=[]; i.c=function(args){i.q.push(args)};
+        var d=document, i=function(){i.c(arguments)};
+        i.q=[]; i.c=function(args){i.q.push(args)};
         w.Intercom=i;
-        function load(){ 
-          var s=d.createElement('script'); s.type='text/javascript'; s.async=true;
-          s.src='https://widget.intercom.io/widget/mvbj6qcv';
-          var x=d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s,x);
+        function l(){
+          var s=d.createElement('script');
+          s.async=true; s.src='https://widget.intercom.io/widget/mvbj6qcv';
+          d.head.appendChild(s);
         }
-        if(d.readyState==='complete'){ load(); }
-        else if(w.attachEvent){ w.attachEvent('onload',load); }
-        else { w.addEventListener('load',load,false); }
+        if(d.readyState==='complete') l();
+        else w.addEventListener('load', l);
       }
     })();
-    // once Intercom is ready, auto-open the chat window
-    window.addEventListener('load', function(){
-      setTimeout(function(){
-        if(window.Intercom) Intercom('show');
-      }, 500);
+  </script>
+
+  <!-- Analytics -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'YOUR_GA_MEASUREMENT_ID');
+    document.addEventListener('DOMContentLoaded', ()=>{
+      document.querySelector('.btn--primary')
+        .addEventListener('click', ()=>gtag('event','start_checkout',{method:'Stripe'}));
     });
   </script>
+</body>
+</html>
+
 
 </body>
 </html>
