@@ -1,0 +1,16 @@
+{
+  "name": "epic-tech-ai",
+  "version": "1.0.0",
+  "description": "Epic Tech AI - Modern Payment Landing Page",
+  "main": "index.html",
+  "scripts": {
+    "build": "mkdir -p dist && cp -r * dist/ && rm -rf dist/node_modules",
+    "dev": "python3 -m http.server 3000",
+    "preview": "python3 -m http.server 3000 --directory dist"
+  },
+  "keywords": ["Epic Tech AI", "SaaS", "AI", "Payment", "Stripe", "PWA"],
+  "author": "Epic Tech AI",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}
